@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.education_centre.Controller">
+   <children>
+      <AnchorPane fx:id="login_page" layoutX="-8.0" layoutY="78.0" prefHeight="372.0" prefWidth="862.0">
+         <children>
+            <TextField fx:id="user_login" layoutX="580.0" layoutY="137.0" prefHeight="31.0" prefWidth="230.0" promptText="enter your login">
+               <font>
+                  <Font name="Corbel" size="14.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="login_button" layoutX="630.0" layoutY="328.0" prefHeight="30.0" prefWidth="147.0" stylesheets="@../../css/bank.css" text="Log In" textFill="#f7f0f5" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="pass_login" layoutX="580.0" layoutY="211.0" prefHeight="30.0" prefWidth="230.0" promptText="enter your password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <RadioButton fx:id="dirbut" layoutX="762.0" layoutY="284.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Other">
+               <toggleGroup>
+                  <ToggleGroup fx:id="acctype" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="tbut" layoutX="672.0" layoutY="284.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Teacher" toggleGroup="$acctype" />
+            <RadioButton fx:id="studbut" layoutX="580.0" layoutY="284.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Student" toggleGroup="$acctype" />
+            <Label fx:id="res_text" layoutX="554.0" layoutY="253.0" prefHeight="31.0" prefWidth="311.0" textAlignment="CENTER" textFill="#e70909">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="573.0" layoutY="54.0" prefHeight="41.0" prefWidth="289.0" text="Authorization" textFill="#1e1e99">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="547.0" style="-fx-background-radius: 0 0 0 0; -fx-background-color: #1E1E99;">
+         <children>
+            <ImageView fitHeight="254.0" fitWidth="295.0" layoutX="184.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../png/logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="-3.0" prefHeight="428.0" prefWidth="98.0" style="-fx-background-color: #9200CC;">
+               <children>
+                  <ImageView fitHeight="82.0" fitWidth="86.0" layoutX="15.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../png/human_brain.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="935.0" prefHeight="600.0" prefWidth="65.0" style="-fx-background-color: #1E1E99;" />
+      <AnchorPane layoutX="547.0" layoutY="59.0" prefHeight="58.0" prefWidth="389.0" style="-fx-background-radius: 0 0 0 0; -fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="14.0" prefHeight="58.0" prefWidth="364.0" text="Educational Center">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="19.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRAIN" textAlignment="CENTER" wrappingWidth="65.0">
+         <font>
+            <Font name="Calisto MT Bold" size="61.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="428.0" prefHeight="168.0" prefWidth="547.0" style="-fx-background-color: #1E1E99; -fx-background-radius: 0 0 0 0;">
+         <children>
+            <AnchorPane prefHeight="173.0" prefWidth="547.0" style="-fx-background-color: #141E61; -fx-background-radius: 0 0 0 0;">
+               <children>
+                  <Label layoutX="56.0" layoutY="13.0" prefHeight="141.0" prefWidth="486.0" text="-LEARNING" textFill="WHITE">
+                     <font>
+                        <Font size="71.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="32.0" prefHeight="82.0" prefWidth="45.0" text="E" textFill="#b407ee">
+                     <font>
+                        <Font size="75.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Circle fill="#251072" layoutX="904.0" layoutY="545.0" radius="131.0" stroke="#727272" strokeType="INSIDE" style="-fx-background-color: #141E61;" />
+      <Circle fill="WHITE" layoutX="905.0" layoutY="545.0" radius="108.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="121.0" fitWidth="143.0" layoutX="848.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../png/icon-sq.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="849.0" layoutY="549.0" prefHeight="59.0" prefWidth="113.0" text="INAI.KG">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
